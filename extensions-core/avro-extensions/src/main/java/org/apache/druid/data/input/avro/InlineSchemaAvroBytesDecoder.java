@@ -96,7 +96,7 @@ public class InlineSchemaAvroBytesDecoder implements AvroBytesDecoder
       );
     }
     catch (Exception e) {
-      throw new ParseException(e, "Fail to decode avro message!");
+      throw new ParseException(e, "Fail to decode avro message: " + e.getMessage());
     }
   }
 }
